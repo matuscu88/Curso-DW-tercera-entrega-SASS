@@ -1,0 +1,35 @@
+// sections.scss
+@import 'variables';
+
+section {
+  background-color: $background-light;
+
+  .banner {
+    background-color: black;
+
+    img {
+      width: 100%;
+      box-shadow: 0 4px 10px rgba(255, 255, 255, 0.7); /* Sombra blanca */
+    }
+  }
+
+  .noticia {
+    background-color: $primary-color;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  div {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 50%;
+      box-shadow: 0 4px 10px rgba(255, 255, 255, 0.7); /* Sombra blanca */
+    }
+  }
+}

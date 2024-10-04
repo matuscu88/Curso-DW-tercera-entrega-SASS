@@ -1,0 +1,44 @@
+// tienda-contacto.scss
+@import 'variables';
+
+.tienda, .contacto, .servicio {
+  color: $text-color;
+  font-family: $font-family;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tienda {
+  padding: 100px;
+  padding-bottom: 150px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  .img {
+    background-color: $background-dark;
+    padding: 1rem;
+
+    img {
+      width: 80%;
+    }
+  }
+}
+
+.contacto {
+  padding: 50px;
+
+  div h1 {
+    color: $primary-color;
+  }
+}
+
+.servicio {
+  padding: 150px;
+
+  div h1 {
+    color: $primary-color;
+  }
+}

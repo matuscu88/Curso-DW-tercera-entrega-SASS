@@ -1,0 +1,51 @@
+// footer.scss
+@import 'variables';
+
+footer {
+  background-color: $background-dark;
+  color: $text-color;
+  font-family: $font-family;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+
+  .container {
+    width: 100%;
+  }
+
+  .footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+  }
+
+  .footer-links {
+    text-align: center;
+    width: 25%;
+    padding: 15px;
+
+    h4 {
+      font-size: 20px;
+      color: $text-color;
+      margin-bottom: 30px;
+      border-bottom: 2px solid $primary-color;
+      padding-bottom: 15px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin-bottom: 10px;
+
+        a {
+          font-size: 18px;
+          color: $text-color;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

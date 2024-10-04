@@ -1,0 +1,48 @@
+// main.scss
+@import 'variables';
+
+body {
+  background-color: $background-dark;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 1rem;
+  padding-top: 30px;
+  padding-bottom: 50px;
+
+  .div-texto, .div-generico {
+    color: $text-color;
+    font-family: $font-family;
+    text-align: center;
+  }
+
+  .div-generico {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    .boton {
+      padding: 0.5rem;
+      border-radius: 50px;
+      background-color: $primary-color;
+      width: 40%;
+      text-align: center;
+      margin: 0 auto;
+
+      &:hover {
+        color: black;
+      }
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 15px;
+    }
+  }
+}

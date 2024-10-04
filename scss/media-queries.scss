@@ -1,0 +1,47 @@
+// media-queries.scss
+@import 'variables';
+
+@media screen and (min-width: 600px) {
+  main {
+    grid-template-columns: repeat(3, 1fr);
+
+    .div-texto {
+      grid-column: 1 / 4;
+    }
+
+    .div-generico {
+      padding: 1.5rem;
+
+      .boton {
+        width: 40%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    padding: 2rem 6rem;
+
+    .div-texto {
+      grid-column: 1 / 4;
+    }
+
+    .div-generico {
+      gap: 2rem;
+      padding: 2rem;
+
+      .boton {
+        width: 35%;
+      }
+
+      img {
+        width: 70%;
+      }
+
+      h2 {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
